@@ -65,7 +65,7 @@ $('.ham_menu>li:nth-child(2)').click(function(){
 
     $('html,body').animate({
 
-        scrollTop: 1250,
+        scrollTop: 1200,
 
     });
 
@@ -87,7 +87,7 @@ $('.ham_sub li:nth-child(2)').click(function(){
 
     $('html,body').animate({
 
-        scrollTop: 3500,
+        scrollTop: 3450,
 
     });
 
