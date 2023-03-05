@@ -1,0 +1,854 @@
+@media all and (max-width: 759px){
+
+    .wrap{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    header,section{
+        width: 100%;
+        margin: 0 auto;
+        background-color: #6D9CD2;
+        position: relative;
+    }
+
+
+    /* header */
+
+    header{
+        z-index: 99;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .menu_wrap{
+        width: 600px;
+        height: 80px;
+        margin: 0 auto;
+        
+    }
+
+    .menu{
+        
+        display: flex;
+        justify-content: space-around;
+        overflow: hidden;
+        display: none;
+
+    }
+
+    .menu li{
+        text-align: center;
+    
+    }
+
+    .menu>li>p{
+        font: 900 24px/80px'';
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .cir{
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        border-radius: 50%;
+        margin: 0 auto;
+        margin-top: -35px;
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .sub_menu{
+        width: 100%;
+        height: 0;
+        color: #fff;
+        transition: 0.5s;
+       
+    }
+
+    .sub_menu li{
+        height: 40px;
+        line-height: 40px;
+        font-size: 15px;
+    }
+
+    .port:hover .sub_menu{
+        height: 120px;
+    }
+
+    .menu li:hover .cir{
+        opacity: 1;
+        margin-top: -20px;
+    }
+
+    .sub_menu li::after{
+        display: block;
+        content: '';
+        width: 0;
+        height: 1px;
+        background-color: #fff;
+        transition: 0.5s;
+
+    }
+
+    .sub_menu li:hover::after{
+        width: 100%;
+    }
+
+
+
+    /* ham */
+    #plus_box{
+        display: none;
+    }
+
+    #plus_box_img{
+        position: absolute;
+        top: 2.631vw;
+        /* 20 */
+        right: 2.631vw;
+        /* 20 */
+        z-index: 9999;
+        transition: 0.5s;
+    }
+
+    #plus_box_img img{
+        width: 6.578vw;
+        /* 50 */
+        height: 6.578vw;
+        /* 50 */
+    }
+    
+    .ham{
+        width: 39.473vw;
+        /* 300 */
+        height: 72.368vw;
+        /* 550 */
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: 0.657vw solid #fff;
+        /* 5 */
+        box-sizing: border-box;
+        opacity: 0;
+        background-color: #6D9CD2;
+        transition: 0.5s;
+    }
+
+    .ham_menu{
+        width: 19.736vw;
+        /* 150 */
+        margin: 0 auto;
+        color: #fff;
+        text-align: center;
+        margin-top: 13.157vw;
+        /* 100 */
+
+    }
+
+    .ham_menu li{
+        height: 10.526vw;
+        /* 80 */
+        line-height: 10.526vw;
+        /* 80 */
+        font-size: 2.631vw;
+        /* 20 */
+        cursor: pointer;
+    }
+
+
+    .ham_cir{
+        width: 1.315vw;
+        /* 10 */
+        height: 1.315vw;
+        /* 10 */
+        background-color: #fff;
+        border-radius: 50%;
+        margin: 0 auto;
+        margin-top: -5.263vw;
+        /* 40 */
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .ham_menu li:hover .ham_cir{
+        margin-top: -1.973vw;
+        /* 15 */
+        opacity: 1;
+    }
+
+    
+
+    .ham_sub{
+        height: 0px;
+        overflow: hidden;
+        transition: 0.5s;
+        
+    }
+
+    .ham_menu li:nth-child(3):hover .ham_sub{
+        height: 23.684vw;
+        /* 180 */
+    }
+
+   
+
+    #plus_box:checked~.ham{
+        opacity: 1;
+    }
+
+
+    #plus_box:checked~#plus_box_img{
+        transform: rotate(45deg);
+    }
+
+
+    .ham_sub li::after{
+        display: block;
+        content: '';
+        width: 0;
+        height: 0.131vw;
+        /* 1 */
+        background-color: #fff;
+        transition: 0.5s;
+        position: relative;
+        bottom: 2.631vw;
+        /* 20 */
+        left: 0;
+    }
+
+    .ham_sub li:hover::after{
+        width: 100%;
+    }
+    
+
+
+
+
+    /* section01 */
+    .sec01{
+        width: 100%;
+        height: 157.894vw;
+        /* 1200 */
+        
+    }
+
+
+    .who{
+        width: 83.333vw;
+        /* 800 */
+        font-size: 12.5vw;
+        /* 120 */
+        color: #fff;
+        position: absolute;
+        left: 50%;
+        margin-left: -41.666vw;
+        /* 400 */
+        opacity: 0;
+        text-align: center;
+    }
+
+   
+
+    .airplane img{
+        position: absolute;
+        top: 78.947vw;
+        /* 600 */
+        left: 72.916vw;
+        /* 700 */
+        animation: airplane 3s alternate;
+       
+    }
+
+    .airplane>img{
+        width: 19.166vw;
+        /* 184 */
+        height: 16.77vw;
+        /* 161 */
+    }
+
+    .air_line{
+        position: absolute;
+        left: -156.25vw;
+        /* 1500 */
+        top: 13.815vw;
+        /* 105 */
+    }
+
+    .air_line img{
+        width: 150.208vw;
+        /* 1442 */
+        height: 39.791vw;
+        /* 382 */
+    }
+
+    .air_line:nth-child(1){
+        transform: rotate(-1deg);
+        transform: translate(-1.315vw, -2.631vw);
+    }
+   
+
+    .cloud{
+        position: absolute;
+        top: 500px;
+        right: 0;
+        z-index: 9;
+        color: #6D9CD2;
+        display: none;
+    }
+
+    .cloud img{
+        width: 59.23vw;
+        /* 770 */
+        height: 74.615vw;
+        /* 970 */
+    }
+
+
+    .cloud_text{
+        position: absolute;
+        bottom: 15.384vw;
+        /* 200 */
+        right: 11.538vw;
+        /* 150 */
+        opacity: 0;
+    }
+
+    .cloud_text h1{
+        font-size: 26px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .cloud_text p{
+        font-size: 18px;
+        text-align: center;
+    }
+
+
+    /* tab_cloud */
+
+    .tab_cloud{
+        position: absolute;
+        top: 144.736vw;
+        /* 1100 */
+        left: 50%;
+        margin-left: -36.184vw;
+        /* 275 */
+        z-index: 9;
+        color: #6D9CD2;
+        display: flex;
+        justify-content: center;
+       
+    }
+
+    .tab_cloud img{
+        width: 72.368vw;
+        /* 550 */
+        height: 39.473vw;
+        /* 300 */
+    }
+
+    .tab_cloud_text{
+        position: absolute;
+        top: 17.105vw;
+        /* 130 */
+        text-align: center;
+        z-index: 99;
+    }
+
+    .tab_cloud_text h1{
+        margin-bottom: 1.973vw;
+        /* 15 */
+        font-size: 3.289vw;
+        /* 25 */
+    }
+
+    .tab_cloud_text p{
+        font-size: 2.105vw;
+        /* 16 */
+    }
+
+
+    .scroll{
+        width: 10.526vw;
+        /* 80 */
+        text-align: center;
+        color: #fff;
+        position: absolute;
+        top: 111.842vw;
+        /* 850 */
+        left: 6.578vw;
+        /* 50 */
+        animation: scroll 4s infinite;
+        z-index: 99;
+       
+    }
+
+
+    .scroll p{
+        margin-bottom: 1.315vw;
+        /* 10 */
+        font-size: 4.21vw;
+        /* 32 */
+
+    }
+
+    .scroll img{
+        width: 6.052vw;
+        /* 46 */
+        height: 9.736vw;
+        /* 74 */
+        margin: 0 auto;
+    }
+
+    
+
+    /* animation */
+    @keyframes airplane{
+        0%{
+            top: 78.947vw;
+            /* 600 */
+            left: 0;
+        }
+
+        100%{
+            top: 78.947vw;
+            /* 600 */
+            left: 72.916vw;
+            /* 700 */
+        }
+    }
+
+    @keyframes scroll{
+        0%{
+            top: 111.842vw;
+            /* 850 */
+            
+        }
+
+        50%{
+            top: 115.789vw;
+            /* 880 */
+            
+        }
+
+        100%{
+            top: 111.842vw;
+            /* 850 */
+            
+        }
+    }
+
+
+
+    
+    /* section02 */
+    .sec02{
+        height: 236.842vw;
+        /* 1800 */
+        padding-top: 13.157vw;
+        /* 100 */
+        
+    }
+
+    .profile_wrap{
+        display: none;
+    }
+
+    .note_profile_wrap{
+        display: none;
+    }
+
+    .mo_profile_wrap{
+        width: 65.789vw;
+        /* 500 */
+        height: 100%;
+        margin: 0 auto;
+        color: #fff;
+        position: relative;
+        
+    }
+
+    .mo_profile{
+        position: relative;
+        top: 26.315vw;
+        /* 200 */
+        left: 0;
+        /* opacity: 0; */
+        
+    }
+
+    .mo_profile p{
+        font-size: 6.25vw;
+        /* 60 */
+        text-align: center;
+        margin-bottom: 3.125vw;
+        /* 30 */
+    }
+
+    .mo_profile img{
+        width: 28.421vw;
+        /* 216 */
+        height: 28.421vw;
+        /* 216 */
+        margin: 0 auto;
+    }
+
+
+
+    .mo_information_wrap{
+        width: 46.052vw;
+        /* 350 */
+        position: relative;
+        top: 32.894vw;
+        /* 250 */
+        left: 50%;
+        margin-left: -22.631vw;
+        /* 172 */
+        /* opacity: 0; */
+    }
+
+    .line{
+        height: 0.208vw;
+        /* 2 */
+        background-color: #fff;
+        margin-top: 0.52vw;
+        /* 5 */
+        margin-bottom: 1.041vw;
+        /* 10 */
+    }
+
+    .information li{
+        margin-bottom: 1.041vw;
+        /* 10 */
+        font-size: 2.763vw;
+        /* 21 */
+    }
+
+
+    .mo_profile_wrap h1{
+        font-size: 3.421vw;
+        /* 26 */
+    }
+
+
+
+    .information li:last-child{
+        margin-bottom: 0;
+    }
+
+    .mo_infor_wrap{
+        width: 46.875vw;
+        /* 450 */
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        top: 39.473vw;
+        /* 300 */
+        left: 50%;
+        margin-left: -23.973vw;
+        /* 167 */
+        /* opacity: 0; */
+    }
+
+    .mo_college{
+        width: 20.833vw;
+        /* 200 */
+        margin-top: 5.208vw;
+        /* 50 */
+    }
+
+    .mo_company{
+        width: 20.833vw;
+        /* 200 */
+        margin-top: 5.208vw;
+        /* 50 */
+    }
+
+    .mo_hobby{
+        width: 52.631vw;
+        /* 400 */
+        position: relative;
+        top: 52.631vw;
+        /* 400 */
+        left: 50%;
+        margin-left: -25.894vw;
+        /* 250 */
+        /* opacity: 0; */
+    }
+
+    .information_hobby{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 5.208vw;
+        /* 50 */
+    }
+
+    .information_hobby li{
+        height: 13.541vw;
+        /* 130 */
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .information_hobby li p{
+        font-size: 2.368vw;
+        /* 18 */
+    }
+
+    .hobby01 img{
+        width: 10.104vw;
+        /* 97 */
+        height: 7.812vw;
+        /* 75 */
+    }
+
+
+    .hobby02 img{
+        width: 5.937vw;
+        /* 57 */
+        height: 9.479vw;
+        /* 91 */
+    }
+
+
+    .hobby03 img{
+        width: 9.791vw;
+        /* 94 */
+        height: 7.812vw;
+        /* 75 */
+    }
+
+
+
+    .information_hobby li p{
+        width: 10.416vw;
+        /* 100 */
+        position: absolute;
+        bottom: -1.315vw;
+        /* 10 */
+        left: 50%;
+        margin-left: -5.208vw;
+        /* 50 */
+        text-align: center;
+        
+    }
+
+
+    .mo_skill{
+        width: 33.333vw;
+        /* 320 */
+        position: relative;
+        top: 65.789vw;
+        /* 500 */
+        left: 50%;
+        margin-left: -17.105vw;
+        /* 130 */
+        /* opacity: 0; */
+    }
+
+    .skill_wrap{
+        width: 26.041vw;
+        /* 250 */
+        margin-top: 3.125vw;
+        /* 30 */
+        margin-left: 4.166vw;
+        /* 40 */
+
+    }
+
+    .skill_wrap li{
+        width: 10.416vw;
+        /* 100 */
+        float: left;
+        position: relative;
+        font-size: 2.083vw;
+        /* 20 */
+    }
+
+    .skill_wrap li img{
+        width: 10.416vw;
+        /* 100 */
+        height: 10.416vw;
+        /* 100 */
+    }
+
+    .skill_wrap li:nth-child(1),.skill_wrap li:nth-child(2){
+        margin-bottom: 3.125vw;
+        /* 30 */
+    }
+
+    .skill_wrap li:nth-child(1),.skill_wrap li:nth-child(3){
+        margin-right: 5.208vw;
+        /* 50 */
+    }
+
+    .percent_wrap{
+        margin-top: 1.041vw;
+        /* 10 */
+        text-align: center;
+    }
+
+    .percent{
+        width: 200px;
+        height: 15px;
+        border: 1px solid #fff;
+        margin-top: 10px;
+        display: none;
+    }
+
+    .per01{
+        width: 80%;
+        height: 100%;
+        background-color: #fff;
+    }
+
+    .per02{
+        width: 90%;
+        height: 100%;
+        background-color: #fff;
+    }
+
+    .per03{
+        width: 80%;
+        height: 100%;
+        background-color: #fff;
+    }
+
+    .per04{
+        width: 70%;
+        height: 100%;
+        background-color: #fff;
+    }
+
+
+    
+
+    /* section03 */
+
+    .sec03{
+        padding: 13.157vw 0;
+        /* 100 */
+    }
+
+    .sec03,.sec04{
+        background: linear-gradient(#6D9CD2, #ADC4DE, #6D9CD2);
+    }
+
+    .sec03>p{
+        width: 78.947vw;
+        /* 600 */
+        font-size: 10.526vw;
+        /* 80 */
+        font-weight: 900;
+        margin: 0 auto;
+        color: #fff;
+        text-align: center;
+    }
+
+    .portfolio_wrap{
+        display: none;
+    }
+
+    .portfolio_wrap02{
+        width: 95vw;
+        /* 722 */
+        padding: 13.157vw 0;
+        /* 100 */
+        margin: 0 auto;
+        margin-bottom: 13.157vw;
+        /* 100 */
+        color: #fff;
+        
+    }
+
+
+    .por03_img,.por04_img{
+        position: relative;
+        top: 19.736vw;
+        /* 150 */
+        left: 6.578vw;
+        /* 50 */
+    }
+
+    .por03_img img,.por04_img img{
+        width: 75.208vw;
+        /* 722 */
+        height: 50vw;
+        /* 480 */
+    }
+
+  
+
+
+    .portfolio{
+        width: 42.105vw;
+        /* 320 */
+        margin: 0 auto;
+    }
+
+    .portfolio h1{
+        font-size: 5.921vw;
+        /* 45 */
+        margin-bottom: 2.631vw;
+        /* 20 */
+        text-align: center;
+    }
+
+    .portfolio p{
+        font-size: 3.289vw;
+        /* 25 */
+        margin-bottom: 6.578vw;
+        /* 50 */
+        text-align: center;
+    }
+
+    .portfolio img{
+        width: 19.736vw;
+        /* 150 */
+        height: 10.526vw;
+        /* 80 */
+        position: absolute;
+        transition: 0.5s;
+        left: 50%;
+        margin-left: -9.868vw;
+        /* 75 */
+    }
+
+    .portfolio img:hover{
+        opacity: 0;
+    }
+
+
+    /* section04 */
+    .sec04{
+        height: 128.947vw;
+        /* 980 */
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sec04 p{
+        text-align: center;
+        font-size: 5.921vw;
+        /* 45 */
+       
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
