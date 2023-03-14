@@ -74,7 +74,7 @@
     }
 
     .port:hover .sub_menu{
-        height: 120px;
+        height: 180px;
     }
 
     .menu li:hover .cir{
@@ -453,30 +453,21 @@
         display: none;
     }
 
-    #por01{
+    #pc_por01,#pc_por02,#pc_por03,#pc_por04{
         position: relative;
         left: -400px;
         opacity: 0;
     }
 
-    #por02{
-        position: relative;
-        left: -400px;
-        opacity: 0;
-    }
 
-    .por01_img{
+
+    .pc_por01_img,.pc_por02_img,.pc_por03_img,.pc_por04_img{
         position: relative;
         left: 800px;
         opacity: 0;
     }
 
-    .por02_img{
-        position: relative;
-        left: 800px;
-        opacity: 0;
-    }
-
+    
 
 
     .portfolio h1{

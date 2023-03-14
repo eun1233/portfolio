@@ -114,7 +114,7 @@
     
     .ham{
         width: 300px;
-        height: 550px;
+        height: 700px;
         position: absolute;
         top: 0;
         right: 0;
@@ -168,7 +168,7 @@
     }
 
     .ham_menu li:nth-child(3):hover .ham_sub{
-        height: 180px;
+        height: 360px;
     }
 
    
@@ -560,31 +560,21 @@
         display: none;
     }
 
-    #por01{
+    #pc_por01,#pc_por02,#pc_por03,#pc_por04{
         position: relative;
         left: -400px;
         opacity: 0;
     }
 
-    #por02{
-        position: relative;
-        left: -400px;
-        opacity: 0;
-    }
-
-    .por01_img{
+    
+    .pc_por01_img,.pc_por02_img,.pc_por03_img,.pc_por04_img{
+        
         position: relative;
         top: 150px;
         left: 800px;
         opacity: 0;
-       
-    }
-
-    .por02_img{
-        position: relative;
-        top: 150px;
-        left: 800px;
-        opacity: 0;
+        margin-left: 50px;
+        
     }
 
 

@@ -49,6 +49,30 @@ $('.sub_menu li:nth-child(2)').click(function(){
 });
 
 
+$('.sub_menu li:nth-child(3)').click(function(){
+
+    $('html,body').animate({
+
+        scrollTop: 3500,
+
+    });
+
+});
+
+
+$('.sub_menu li:nth-child(4)').click(function(){
+
+    $('html,body').animate({
+
+        scrollTop: 4300,
+
+    });
+
+});
+
+
+
+
 // ham
 $('.ham_menu>li:nth-child(1)').click(function(){
 
@@ -88,6 +112,28 @@ $('.ham_sub li:nth-child(2)').click(function(){
     $('html,body').animate({
 
         scrollTop: 3450,
+
+    });
+
+});
+
+
+$('.ham_sub li:nth-child(3)').click(function(){
+
+    $('html,body').animate({
+
+        scrollTop: 4450,
+
+    });
+
+});
+
+
+$('.ham_sub li:nth-child(4)').click(function(){
+
+    $('html,body').animate({
+
+        scrollTop: 5400,
 
     });
 
@@ -282,7 +328,7 @@ $(window).scroll(function(){
     console.log(sct);
 
     if(sct>1800){
-        $('#por01').animate({
+        $('#pc_por01').animate({
 
             left: 0,
             opacity: 1,
@@ -291,7 +337,7 @@ $(window).scroll(function(){
     }
 
     if(sct>1800){
-        $('.por01_img').animate({
+        $('.pc_por01_img').animate({
 
             left: 0,
             opacity: 1,
@@ -302,7 +348,7 @@ $(window).scroll(function(){
 
     
     if(sct>2600){
-        $('#por02').animate({
+        $('#pc_por02').animate({
 
             left: 0,
             opacity: 1,
@@ -311,7 +357,49 @@ $(window).scroll(function(){
     }
 
     if(sct>2600){
-        $('.por02_img').animate({
+        $('.pc_por02_img').animate({
+
+            left: 0,
+            opacity: 1,
+
+        },1000);
+    }
+
+
+
+
+    if(sct>3400){
+        $('#pc_por03').animate({
+
+            left: 0,
+            opacity: 1,
+
+        },1000);
+    }
+
+    if(sct>3400){
+        $('.pc_por03_img').animate({
+
+            left: 0,
+            opacity: 1,
+
+        },1000);
+    }
+
+
+
+
+    if(sct>4100){
+        $('#pc_por04').animate({
+
+            left: 0,
+            opacity: 1,
+
+        },1000);
+    }
+
+    if(sct>4100){
+        $('.pc_por04_img').animate({
 
             left: 0,
             opacity: 1,

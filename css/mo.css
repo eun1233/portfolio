@@ -763,7 +763,6 @@
         /* 722 */
         padding: 13.157vw 0;
         /* 100 */
-        margin: 0 auto;
         margin-bottom: 13.157vw;
         /* 100 */
         color: #fff;
@@ -771,21 +770,25 @@
     }
 
 
-    .por03_img,.por04_img{
+    .mo_por01_img,.mo_por02_img,.mo_por03_img,.mo_por04_img{
         position: relative;
         top: 19.736vw;
         /* 150 */
-        left: 6.578vw;
+        left: 15vw;
         /* 50 */
     }
 
-    .por03_img img,.por04_img img{
+    .mo_por01_img img,.mo_por02_img img{
         width: 75.208vw;
-        /* 722 */
         height: 50vw;
         /* 480 */
     }
 
+    .mo_por03_img img,.mo_por04_img img{
+        width: 65vw;
+        height: 50vw;
+        /* 480 */
+    }
   
 
 
